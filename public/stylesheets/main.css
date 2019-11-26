@@ -1,0 +1,112 @@
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  //border: 3px solid #73AD21;
+  //padding: 20px;
+  margin-top: 127px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 5%;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: left;
+   text-transform: capitalize;
+}
+
+input[type=text], input[type=password], input[type=email], select {
+   width: 50%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   text-align:left;
+ }
+
+.button {
+  width: 17%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#logo{
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    width: 73px;
+    height: 40px;
+    overflow: hidden;
+}
+#emp {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#emp td, #emp th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#emp tr:nth-child(even){background-color: #f2f2f2;}
+
+#emp tr:hover {background-color: #ddd;}
+
+#emp th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  width: 500px;
+  clear: both;
+  margin-left: 25px;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}

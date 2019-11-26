@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET      /dashboard                          controllers.Application.index
+
+# Map static resources from the /public folder to the /assets URL path
+#GET     /dashboard/charts                  controllers.Application.dashboardChart
+GET     /dashboard/tables                 controllers.Application.dashboardTablePage
+GET     /dashboard/tData             controllers.Application.dashboardTable
+GET     /dashboard/login             controllers.Login.loginPage
+POST    /dashboard/login            controllers.Login.login(request: Request)
+GET     /dashboard/logout           controllers.Login.logout(request: Request)
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+#GET     /javascriptRoutes           controllers.Application.javascriptRoutes(request: Request)
+GET     /api/1                      controllers.Application.getCorrelation1
+GET     /api/2                      controllers.Application.getCorrelation2
+GET     /api/3                      controllers.Application.getCorrelation3
+GET     /api/4                      controllers.Application.getCorrelation4
+GET     /api/5                      controllers.Application.getCorrelation5
+GET     /api/6                      controllers.Application.getCorrelation6
+GET     /api/7                      controllers.Application.getCorrelation7
+GET     /api/8                      controllers.Application.getCorrelation8
+
+GET     /dashboard/*path                controllers.Application.defaultPage(path: String)
